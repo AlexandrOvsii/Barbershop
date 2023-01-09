@@ -1,0 +1,356 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --main-title-color: #ffffff;
+  --second-title-color: #303030;
+  --accent-color: #ff6c00;
+  --typical-line-height: 1.36;
+}
+
+.btn {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+}
+
+.suptitle {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: var(--typical-line-height);
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* 
+.header {
+}
+.header-navigation {
+}
+.header-logo {
+}
+.header-image {
+}
+.header-list {
+}
+.header-item {
+} */
+/* =================HEADER================ */
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--main-title-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-color);
+}
+
+.header-tel {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--main-title-color);
+}
+.header-btn {
+  color: #ffffff;
+}
+
+.header {
+  background-color: gray;
+}
+
+/* ===========HERO=========== */
+.hero {
+  background-color: gray;
+}
+/* .hero-list {
+}
+.list {
+}
+.hero-item {
+} */
+
+.hero-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: var(--typical-line-height);
+  letter-spacing: 0.2em;
+  color: var(--second-title-color);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+  color: var(--accent-color);
+}
+
+.hero-suptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+.hero-title {
+  font-family: "Raleway", sans-serif;
+  font-size: 72px;
+  line-height: 1, 18;
+  letter-spacing: 0.05em;
+  color: var(--main-title-color);
+}
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1, 66;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* =========== ABOUT =========== */
+.about {
+}
+.about-list {
+}
+.list {
+}
+.about-item {
+}
+.about-image {
+}
+.about-suptitle {
+  color: var(--second-title-color);
+}
+.about-title {
+  color: var(--second-title-color);
+}
+
+.about-subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-text {
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+.about-btn {
+  color: #303030;
+}
+
+/* ==============PRICES=============== */
+.prices {
+  background-color: gray;
+}
+.prices-suptitle {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.prices-title {
+  color: var(--main-title-color);
+}
+
+.prices-list {
+}
+
+.prices-item {
+}
+.prices-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.prices-texttext {
+}
+.prices-btn {
+  color: #ffffff;
+}
+
+/* ===========BENEFITS============ */
+.benefits {
+}
+.benefits-list {
+}
+.benefits-item span {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  letter-spacing: 0.05em;
+  color: var(--second-title-color);
+}
+.benefits-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: var(--typical-line-height);
+  color: var(--second-title-color);
+}
+.benefits-suptitle {
+  color: var(--second-title-color);
+}
+
+.benefits-title {
+  color: var(--second-title-color);
+}
+
+.benefits-subtitle {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+/* ===============TEAM================ */
+.team {
+}
+.team-suptitle {
+  color: var(--second-title-color);
+}
+
+.team-title {
+  color: #303030;
+}
+
+.team-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.team-list {
+}
+
+.team-item {
+}
+.team-image {
+}
+.team-description {
+  font-size: 14px;
+  line-height: 1.36;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+/* ===========GALLERY=========== */
+.gallery {
+}
+
+.gallery-suptitle {
+  color: var(--second-title-color);
+}
+
+.gallery-list {
+}
+.list {
+}
+.gallery-item {
+}
+.gallery-img {
+}
+
+/* ==============ONLINE============ */
+.online {
+  background-color: gray;
+}
+
+.online-title {
+  color: var(--main-title-color);
+}
+
+/* ==============CONTACTS============ */
+.contacts {
+  background-color: gray;
+}
+.contacts-title {
+  color: var(--main-title-color);
+}
+.title {
+}
+.contacts-address {
+  font-style: normal;
+}
+.contacts-list {
+}
+.contacts-item {
+}
+.contacts-link {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contacts-link.bold {
+  font-weight: 700;
+}
+
+.contacts-text {
+  color: var(--main-title-color);
+}
+.contacts-shedule {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+/* ==============FOOTER============= */
+.footer {
+}
+.footer-copyright {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+
+.footer-list {
+}
+
+.footer-item {
+}
+.footer-link {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #303030;
+}
