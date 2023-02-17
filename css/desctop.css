@@ -1,0 +1,49 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .container.container-mini {
+    max-width: 1200px;
+  }
+
+  .team-list {
+    gap: 30px;
+    flex-direction: row;
+  }
+
+  .gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .gallery-item {
+    width: calc((100% - 90px) / 4);
+  }
+  .benefits-container {
+    display: flex;
+    padding-left: 85px;
+    gap: 130px;
+    flex-direction: row;
+  }
+
+  .benefits-list {
+    margin-left: 0;
+  }
+
+  .about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .about-list {
+    display: flex;
+    gap: 30px;
+    width: calc((100%-30px) / 2);
+    flex-shrink: 1;
+  }
+}

@@ -1,0 +1,13 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+  .benefits-title {
+    font-size: 41px;
+  }
+  .benefits-item {
+    width: 170px;
+    height: 133px;
+  }
+  
+}
