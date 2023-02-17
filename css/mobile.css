@@ -2,10 +2,12 @@
   .container {
     max-width: 448px;
   }
-  
+
   .benefits-item {
     width: 170px;
     height: 133px;
   }
-  
+  .contact-wrap {
+    background-image: url(../img/contacts-tablet.png);
+  }
 }
