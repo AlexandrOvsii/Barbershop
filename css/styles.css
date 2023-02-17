@@ -276,17 +276,17 @@ img {
   max-width: 470px;
 }
 
-.about-item {
-  width: calc((100%-30px) / 2);
+.about-subtitle > span {
+  display: none;
 }
 
 .about-suptitle {
   color: var(--second-title-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .about-title {
   color: var(--second-title-color);
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 28px;
   line-height: 1.17;
 }
@@ -296,7 +296,7 @@ img {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 .about-text {
   font-size: 14px;
@@ -318,11 +318,12 @@ img {
 /* ==============PRICES=============== */
 .prices {
   background-color: #111319;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 84px;
+  padding-bottom: 84px;
   background-image: url(../img/prices-bg.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -334,23 +335,21 @@ img {
 .prices-title {
   color: var(--main-title-color);
   margin-bottom: 44px;
+  font-size: 40px;
 }
 
-.prices-list,
-.prices-list-left {
-  padding: 20px 30px;
-  width: calc((100% - 30px) / 2);
-  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
-}
-
-.prices-list-left {
+/* .prices-list-left {
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-}
+} */
 
 .prices-wrap {
-  display: flex;
   gap: 30px;
   margin-bottom: 44px;
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .prices-item {
@@ -358,20 +357,18 @@ img {
   justify-content: space-between;
   align-items: baseline;
   gap: 12px;
-}
-
-.prices-item:not(:last-child) {
   margin-bottom: 20px;
 }
+
 .prices-text {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
 
 .prices-cost {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;

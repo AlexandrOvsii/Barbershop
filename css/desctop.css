@@ -40,10 +40,64 @@
     padding-bottom: 120px;
   }
 
+  .about-item {
+    width: 270px;
+  }
+  .about-title {
+    font-size: 42px;
+  }
   .about-list {
     display: flex;
     gap: 30px;
     width: calc((100%-30px) / 2);
     flex-shrink: 1;
+    flex-direction: row;
   }
+
+  .about-text {
+    margin-bottom: 42px;
+  }
+
+  .about-wrap {
+    max-width: 470px;
+  }
+
+  .about-subtitle > span{
+    display: inline-block;
+  }
+
+  .prices-wrap {
+    display: flex;
+  }
+
+  .prices-list,
+.prices-list-left {
+  padding: 20px 30px;
+  width: calc((100% - 30px) / 2);
+}
+.prices {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.prices-list,
+.prices-list-left {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.prices-list-left {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-item {
+  margin-bottom: 0px;
+}
+.prices-wrap {
+  padding-left: 0px;
+padding-right: 0px;
+background: none;
+}
+.prices-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 }

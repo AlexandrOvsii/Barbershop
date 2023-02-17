@@ -96,22 +96,51 @@
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
-              <img
-                class="about-image"
-                src="./img/shave-the-beard.jpg"
-                alt="shave-the-beard"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  srcset="./img/about-photo.jpg 1x, ./img/about-photo-2x.jpg 2x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./img/about-photo-tab-1.jpg 1x, ./img/about-photo-tab-1-2x.jpg 2x"
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="about-image"
+                  src="./img/about-photo.jpg"
+                  srcset="./img/about-photo.jpg 1x, ./img/about-photo-2x.jpg 2x"
+                  alt="shave-the-beard"
+                  width="330"
+                />
+              </picture>
             </li>
-            <li class="about-list">
-              <img
-                class="about-image"
-                src="./img/cutting-hair.jpg"
-                alt="cutting-hair"
-                width="270"
-                height="445"
-              />
+            <li class="about-item">
+              <picture>
+                <source
+                  srcset="
+                    ./img/about-photo-r.jpg    1x,
+                    ./img/about-photo-r-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/about-photo-tab-2.jpg    1x,
+                    ./img/about-photo-tab-2-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="about-image"
+                  src="./img/about-photo-r.jpg"
+                  srcset="
+                    ./img/about-photo-r.jpg    1x,
+                    ./img/about-photo-r-2x.jpg 2x
+                  "
+                  alt="shave-the-beard"
+                  width="330"
+                />
+              </picture>
             </li>
           </ul>
           <div class="about-wrap">
@@ -119,7 +148,7 @@
             <h2 class="about-title title">Best Barbershop in your city</h2>
             <p class="about-subtitle">
               If you want to add more confidence to your image, you should
-              definitely visit us.
+              <span>definitely</span> visit us.
             </p>
             <p class="about-text">
               We are a team that never stops at what has been achieved and are
@@ -132,7 +161,7 @@
           </div>
         </div>
       </section>
-      <!-- <section class="prices">
+      <section class="prices">
         <div class="container">
           <p class="prices-suptitle suptitle">
             Spend your time with the best masters
@@ -178,7 +207,7 @@
           </div>
           <button type="button" class="prices-btn btn">Online-booking</button>
         </div>
-      </section> -->
+      </section>
       <section class="benefits">
         <div class="container benefits-container">
           <ul class="benefits-list list">
