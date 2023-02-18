@@ -2,6 +2,17 @@
   .container {
     max-width: 720px;
   }
+  .hero-soc {
+    display: flex;
+  }
+  .hero-wrap {
+    background-image: var(--gra), url(../img/hero-img.jpg);
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+    max-width: 361px;
+  }
   .team {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -76,5 +87,42 @@
   }
   .prices-title {
     font-size: 40px;
+  }
+  .online-title {
+    text-align: left;
+  }
+
+  .online-form {
+    gap: 30px;
+  }
+
+  .online-btn {
+    margin-left: 0;
+  }
+
+  .contacts-title {
+    text-align: left;
+  }
+
+  .contacts-wrap {
+    display: flex;
+    gap: 30px;
+  }
+  .contacts-item {
+    width: 250px;
+  }
+  .contacts-list {
+    width: 330px;
+  }
+  .online-input {
+    width: 330px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer-list {
+    margin-bottom: 0px;
   }
 }

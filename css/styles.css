@@ -86,6 +86,7 @@ img {
   width: 60px;
   height: 1px;
   background: currentColor;
+  color: rgba(157, 164, 189, 0.4);
 }
 
 .visually-hidden {
@@ -205,7 +206,7 @@ img {
 
 .hero-soc {
   width: 100px;
-  display: flex;
+  display: none;
   align-items: flex-end;
   padding-top: 40px;
   padding-left: 27px;
@@ -214,14 +215,17 @@ img {
 .hero-container {
   display: flex;
   padding-right: 0;
+  padding-left: 0;
 }
 
 .hero-wrap {
-  background-image: var(--gra), url(../img/hero-img.jpg);
+  background-image: var(--gra), url(../img/mobile-bg.jpg);
   background-size: cover;
   flex-grow: 1;
   max-width: 1200px;
-  padding: 272px 100px 208px;
+  padding-top: 208px;
+  padding-bottom: 209px;
+  padding-left: 15px;
   margin: 0 auto;
 }
 
@@ -245,18 +249,18 @@ img {
 
 .hero-title {
   font-family: "Raleway", sans-serif;
-  font-size: 72px;
+  font-size: 48px;
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: var(--main-title-color);
   margin-bottom: 20px;
 }
 .hero-subtitle {
-  font-size: 18px;
-  line-height: 1, 66;
+  font-size: 16px;
+  line-height: 1.66;
   letter-spacing: 0.02em;
   color: #9da4bd;
-  max-width: 360px;
+  max-width: 321px;
 }
 
 /* =========== ABOUT =========== */
@@ -622,7 +626,7 @@ img {
 .online-form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  
 }
 
 .online-input {
@@ -692,28 +696,25 @@ img {
   color: #f7f7f7;
   display: block;
   margin: 0 auto;
+  
 }
 
 .contacts {
   padding-top: 84px;
   padding-bottom: 84px;
-
 }
 .contacts-title {
   margin-bottom: 40px;
   color: var(--main-title-color);
   text-align: center;
 }
-.title {
-}
+
 .contacts-address {
   font-style: normal;
   margin-bottom: 44px;
 }
-.contacts-list {
-}
 
-.contacts-item:not(last-child) {
+.contacts-item:not(:last-child) {
   margin-bottom: 20px;
 }
 .contacts-link {
@@ -725,6 +726,10 @@ img {
 
 .contacts-link.bold {
   font-weight: 700;
+}
+
+.contacts-wrap{
+
 }
 
 .contacts-text {
@@ -741,9 +746,10 @@ img {
 /* ==============FOOTER============= */
 .footer {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
-  margin-top: 56px;
-  margin-bottom: 56px;
+  margin-top: 44px;
+  margin-bottom: 44px;
 }
 .footer-copyright {
   font-weight: 600;
@@ -756,7 +762,9 @@ img {
 .footer-list {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 40px;
+  margin-bottom: 20px;
 }
 
 .footer-list::before {
