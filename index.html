@@ -24,17 +24,20 @@
     <link rel="stylesheet" href="./css/desctop.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="" class="header-logo">
-            <img
+            <!-- <img
               class="header-image"
-              src="./img/Logo.svg"
+              src="./img/logo.svg"
               alt="cite-logo"
               width="69"
               height="55"
-            />
+            /> -->
+            <svg class="header-image" width="69" height="55">
+              <use href="./img/icons.svg#icon-logo"></use>
+            </svg>
           </a>
           <ul class="header-list list">
             <li class="header-item">
@@ -51,12 +54,14 @@
             </li>
           </ul>
         </nav>
-        <a class="header-tel link" href="tel:+380441111111"
-          >+38 044 111 11 11</a
-        >
-        <button type="button" class="header-btn btn">Online-booking</button>
+        <div class="header-tel-btn">
+          <a class="header-tel link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button type="button" class="header-btn btn">Online-booking</button>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero">
         <div class="container hero-container">
@@ -90,7 +95,7 @@
               carefully and with style.
             </p>
           </div>
-        </div>    
+        </div>
       </section>
       <section class="about">
         <div class="container about-container">
@@ -102,7 +107,10 @@
                   media="(min-width:1200px)"
                 />
                 <source
-                  srcset="./img/about-photo-tab-1.jpg 1x, ./img/about-photo-tab-1-2x.jpg 2x"
+                  srcset="
+                    ./img/about-photo-tab-1.jpg    1x,
+                    ./img/about-photo-tab-1-2x.jpg 2x
+                  "
                   media="(min-width:768px)"
                 />
                 <img
@@ -482,8 +490,8 @@
                     >
                   </li>
                 </ul>
-            </di >
-            </address>
+              </address>
+            </div>
             <div>
               <p class="contacts-text suptitle">Working hours</p>
               <p class="contacts-shedule">Every day from 9:00 to 22:00</p>
@@ -515,5 +523,85 @@
         </li>
       </ul>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-close-button">
+          <svg class="modal-icon-x" width="8" height="8">
+            <use href="./img/icons.svg#modal-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form">
+          <label class="modal-label">
+            <span>Name</span>
+            <span class="modal-input-wrap">
+              <input
+                class="modal-input"
+                type="text"
+                name="input-text"
+                placeholder="введіть ім'я"
+                required
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./img/icons.svg#logo-name"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label">
+            <span>Phone</span>
+            <span class="modal-input-wrap">
+              <input
+                class="modal-input"
+                type="tel"
+                name="input-phone"
+                placeholder="введіть номер телефону"
+                required
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./img/icons.svg#logo-phone"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label">
+            <span>Email</span>
+            <span class="modal-input-wrap">
+              <input
+                class="modal-input"
+                type="email"
+                name="input-name"
+                placeholder="введіть адресу пошти"
+              />
+              <svg class="modal-icon" width="18" height="18">
+                <use href="./img/icons.svg#logo-email"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="modal-label">
+            <span>Comment</span>
+            <textarea
+              class="textarea"
+              type="textarea"
+              name="feedback"
+              rows="5"
+              placeholder="Comment here..."
+            ></textarea>
+          </label>
+          <div class="modal-field">
+            <input
+              class="modal-checkbox visually-hidden"
+              type="checkbox"
+              id="policy"
+              name="policy"
+              value="true"
+              required
+            />
+            <label class="checkbox-text" for="policy"
+              >I accept the terms and conditions of the Privacy Policy</label
+            > 
+          </div>
+          <button class="modal-btn" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
