@@ -2,6 +2,27 @@
   .container {
     max-width: 720px;
   }
+  .header-container {
+    display: flex;
+  }
+  .header-logo {
+    margin-right: 58px;
+  }
+  .header-tel {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .header-list {
+    display: flex;
+  }
+  .header-tel-btn{
+    display: flex;
+  }
+
+  .header-image {
+    fill: #303030;;
+  }
+  
   .hero-soc {
     display: flex;
   }
