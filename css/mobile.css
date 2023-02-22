@@ -1,0 +1,17 @@
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 448px;
+  }
+
+  .hero-wrap {
+    background-image: var(--gra), url(../img/tablet-bg.png);
+  }
+
+  .benefits-item {
+    width: 170px;
+    height: 133px;
+  }
+  .contact-wrap {
+    background-image: url(../img/contacts-tablet.png);
+  }
+}

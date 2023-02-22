@@ -1,0 +1,156 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .hero-title {
+    font-size: 72px;
+  }
+
+  .hero-wrap {
+    padding-top: 272px;
+  padding-bottom: 208px;
+  padding-left: 100px;
+  }
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .container.container-mini {
+    max-width: 1200px;
+  }
+
+  .team-list {
+    gap: 30px;
+    flex-direction: row;
+  }
+
+  .gallery {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .gallery-item {
+    width: calc((100% - 90px) / 4);
+  }
+  .benefits-container {
+    display: flex;
+    padding-left: 85px;
+    gap: 130px;
+    flex-direction: row;
+  }
+
+  .benefits-list {
+    margin-left: 0;
+  }
+
+  .about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .about-item {
+    width: 270px;
+  }
+  .about-title {
+    font-size: 42px;
+  }
+  .about-list {
+    display: flex;
+    gap: 30px;
+    width: calc((100%-30px) / 2);
+    flex-shrink: 1;
+    flex-direction: row;
+  }
+
+  .about-text {
+    margin-bottom: 42px;
+  }
+
+  .about-wrap {
+    max-width: 470px;
+  }
+
+  .about-subtitle > span{
+    display: inline-block;
+  }
+
+  .prices-wrap {
+    display: flex;
+  }
+
+  .prices-list,
+.prices-list-left {
+  padding: 20px 30px;
+  width: calc((100% - 30px) / 2);
+}
+.prices {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.prices-list,
+.prices-list-left {
+  background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+}
+
+.prices-list-left {
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+
+.prices-item {
+  margin-bottom: 0px;
+}
+.prices-wrap {
+  padding-left: 0px;
+padding-right: 0px;
+background: none;
+}
+.prices-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.online-btn {
+  color: #f7f7f7;
+}
+.contact-wrap > .container {
+  display: flex;
+}
+.online {
+  width: calc(50% + 15px);
+  padding-right: 30px;
+  padding-top: 130px;
+  padding-bottom: 120px;
+}
+
+.contacts {
+  padding-top: 130px;
+  padding-bottom: 120px;
+  width: calc(50% - 15px);
+  padding-left: 100px;
+  margin: 0 auto;
+}
+
+.contact-wrap {
+  background-image: url(../img/Bg.png);
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+}
+.contact-wrap > .container {
+  display: flex;
+  flex-direction: row;
+}
+.contacts-wrap {
+  display: flex;
+  gap: 70px;
+  flex-direction: column;
+}
+.contacts-address {
+  margin-bottom: 0px;
+}
+.online-input {
+  width: 270px;
+}
+.footer {
+  margin-top: 56px;
+  margin-bottom: 56px;
+}
+}
